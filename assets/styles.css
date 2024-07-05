@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-Medium";
+  src: url("fonts/OpenSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-Italic";
+  src: url("fonts/OpenSans-Italic.ttf");
+}
+
+body {
+  margin: 0;
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 15px;
+}
+
+header {
+  background-color: #003a6d;
+  padding: 15px 20px;
+}
+
+.header-brand {
+  color: white;
+  font-family: "OpenSans-Bold";
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.header-end {
+  float: right;
+  display: inline;
+}
+
+.header-end a {
+  padding: 0 5px;
+}
+
+.header-end i {
+  background-color: #003a6d;
+  color: white;
+}
+
+article {
+  margin-left: 200px;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 23px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 20px 0 8px;
+}
+
+h3 {
+  font-size: 17px;
+  margin: 15px 0 8px;
+}
+
+h1, h2,h3, p, a {
+  color: black;
+}
+
+p {
+  margin: 10px 0;
+}
+
+b {
+  font-family: "OpenSans-Bold";
+}
+
+i {
+  font-family: "OpenSans-Italic";
+}
+
+ul, ol {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+img {
+  border-radius: 2%;
+  margin: 10px;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f4f4f4;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+nav a {
+  display: block;
+  color: black;
+  padding: 7px 20px;
+  text-decoration: none
+}
+
+nav a.active {
+  font-family: "OpenSans-Bold";
+  color: #1192e8;
+}
+
+nav a:hover {
+  background-color: #e0e0e0;
+}
+
+section a {
+  color: #1192e8;
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+table {
+  width: 50%;
+}
+
+td, th {
+  padding: 5px;
+}
+
+table, th, td {
+  border: 1.5px solid #8d8d8d;
+  border-collapse: collapse;
+}
+
+button {
+  font-size: 15px;
+  font-family: "OpenSans-Regular";
+}
+
+.dark-theme-container {
+  background-color: #393939;
+}
+
+.dark-theme-text {
+  color: white;
+}
+
+#section1,
+#section2,
+#section3,
+#section4 {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .img-fluid  {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  nav a {
+    float: left;
+  }
+
+  article {
+    margin-left: 0;
+  }
+
+  .img-fluid  {
+    width: 70%;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  nav a {
+    text-align: center;
+    float: none;
+  }
+
+  .img-fluid  {
+    width: 80%;
+  }
+
+}
