@@ -111,7 +111,7 @@ header {
 /* --- Secciones --- */
 article {
     grid-column: 3;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 
 article h2 {
@@ -139,7 +139,7 @@ td, th {
 }
 
 table, th, td {
-    border: 1.5px solid #6f6f6f;
+    border: 1px solid #6f6f6f;
     border-collapse: collapse;
 }
 
