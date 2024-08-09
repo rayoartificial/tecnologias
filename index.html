@@ -4,198 +4,65 @@
         <title> tecnologías </title>
 		<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" href="assets/styles.css">
-        <script src="https://kit.fontawesome.com/dc19377fa3.js" crossorigin="anonymous"></script>
-        
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="icon" type="image/x-icon" href="figs/iconos/main.svg">
     </head>
     <body>
         <header>
-            <a class="header-brand" href="index.html">Tecnologías eléctricas</a>
-            <div class="header-end">
-                <a href="https://github.com/rayoartificial/"><i class="fa-brands fa-github fa-lg"></i></a>
-                <a href="https://www.linkedin.com/company/rayoartificial/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
-                <a onclick="darkTheme()" class="toggle-button" id="theme-button"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></a>
-            </div>
+            <img id="icon" src="figs/iconos/main.svg" alt="icono">
+            <h1>tecnologías eléctricas</h1>
         </header>
-        <nav>
-            <a href="" class="nav-link active" data-section="section0">Inicio</a>
-            <a href="" class="nav-link" data-section="section1">Generadores</a>
-            <a href="" class="nav-link" data-section="section2">Motores</a>
-            <a href="" class="nav-link" data-section="section3">Transformadores</a>
-        </nav>
 
-        <article>
-            <section id="section0">
-                <h1> ¡Bienvenidos a Tecnologías eléctricas! </h1>
-                <p><a href="https://github.com/rayoartificial/tecnologias">Tecnologías eléctricas</a> es un proyecto educativo 
-                    de <a href="https://github.com/rayoartificial/">Rayo Artificial</a> que tiene el objetivo de repasar las tecnologias utilizadas en la industria eléctrica y sus aplicaciones.
-                </p>
-            </section>
+        <section>
+            <p> 
+                Tecnologías Eléctricas es una plataforma de soporte para ingenieros
+                especializados en las áreas de suministro y uso de 
+                la energía eléctrica.
+                Su objetivo es contribuir con el aprendizaje de distintos conocimientos científicos y técnicos
+                de manera comprensible y amena.
+            </p>
+        </section>
+        
+        <section id="articles">
+            <h2>Artículos</h2>
+            
+            <div class="card-deck">
+                <div class="card hv">
+                    <a href="generadores.html"><h3 class="card-title" style="background-color: #8a3ffc; color: white;">Generadores</h3></a>
+                    <img src="figs/generadores/water-turbine.png" alt="generador">
+                </div>
 
-            <section id="section1">
-                <h1>Generadores</h1>
-                <div class="subsection">
-                    <h2>Introducción</h2>
-                    <p>Un generador es una máquina que convierte la energía mecánica en energía eléctrica. 
-                        La energía mecánica puede ser proporcionada por una turbina de gas, una turbina de vapor o una turbina hidráulica.
-                        Los generadores están formados por un rotor, un estátor, un devanado inductor ubicado en el rotor y 
-                        un devanado inducido ubicado en el estátor.
-                    </p>
+                <div class="card lv">
+                    <a href="motores.html"><h3 class="card-title" style="background-color: #33b1ff;">Motores </h3></a>
+                    <img src="figs/motores/motor.png" alt="motor">
                 </div>
-                <div class="subsection">
-                    <h2>Generadores síncronos</h2>
-                    <p>En un generador síncrono la velocidad de rotación es constante y es igual a: </p>
-                    $$n=\frac{60f}{p}$$
-                    <p>donde $f$ es la frecuencia de la corriente generada y $p$ es el número de pares de polos del rotor. </p>
-                    <p>Los generadores síncronos pueden clasificarse en:
-                    </p>
-                    <ul>
-                        <li>Turbogeneradores. En estos generadores el rotor está conectado a una turbina de gas o una turbina de vapor 
-                            y se mueven a velocidades altas (1800 y 3600 RPM).
-                        </li>
-                        <li>Hidrogeneradores. En estos generadores el rotor está conectado a una turbina hidráulica (Pelton, Francis, Kaplan)
-                            y se mueven a velocidades bajas (de 120 a 900 RPM).
-                        </li>
-                    </ul>
-                    <p> De igual forma, los rotores pueden dividirse en dos grupos: </p>
-                    <ul>
-                        <li>Rotores de polos lisos. En estos rotores el devanado inductor está distribuido en ranuras.
-                            Son usados cuando el número de polos del generador es uno o dos y, por lo tanto, 
-                            las velocidades son altas, por ejemplo, en los turbogeneradores. 
-                            Su diseño previene esfuerzos mecánicos (fuerza centrífuga) en los polos del generador.
-                        </li>
-                        <li>Rotores de polos salientes. En estos rotores el devanado inductor se instala en forma de arrollamiento concentrado. 
-                            Son usados cuando el número de polos del generador es alto y, por lo tanto, 
-                            las velocidades son bajas, por ejemplo, en los hidrogeneradores.
-                        </li>
-                    </ul>
-                    <img class="img-fluid" src="images/generadores/generator.svg" alt="generador">
-                </div>
-                <div class="subsection">
-                    <h2>Principios de operación</h2>
-                    <p> Generalmente, los rotores de los generadores síncronos son electroimanes. 
-                        Es decir, por el devanado inductor circula una corriente continua la cual origina un campo magnético (ley de Ampère).
-                        Este campo interactúa con el devanado del estátor e induce una tensión en sus terminales (ley de Faraday).
-                        Una excitatriz suministra la corriente continua al devanado inductor a través de dos anillos colectores. 
-                    </p>
-                    <img class="img-fluid" src="images/generadores/dynamo.gif" alt="dynamo">
-                </div>
-                <div class="subsection">
-                    <h2>Referencias</h2>
-                    <ul>
-                        <li>Fitzgerald, Kingsley y Umans (2003). Electric Machinery. McGraw-Hill. </li>
-                        <li>Mora (2003). Máquinas eléctricas. McGraw-Hill. </li>
-                        <li>Papailiou (2021). Springer Handbook of Power Systems. Springer Singapore. </li>
-                        <li><a href="https://commons.wikimedia.org/wiki/File:Generator.svg">Generator</a> </li>
-                        <li><a href="https://commons.wikimedia.org/wiki/File:Dynamo.wechsel.wiki.v.1.00.gif">Dynamo wechsel</a> </li>
-                    </ul>
-                </div>
-            </section>
 
-            <section id="section2">
-                <h1>Motores</h1>
-                <div class="subsection">
-                    <h2>Introducción</h2>
-                    <p>Un motor es una máquina que convierte la energía eléctrica en energía mecánica.
-                        La energía eléctrica es proporcionada por una fuente de corriente monofásica o polifásica.
-                        Los motores están formados por un rotor, un estátor y una caja de bornes.
-                    </p>
+                <div class="card hv">
+                    <a href="transformadores.html"><h3 class="card-title" style="background-color: #007d79; color: white;">Transformadores</h3></a>
+                    <img src="figs/transformadores/transformador-ABB.jpeg" alt="transformador">
                 </div>
-                <div class="subsection">
-                    <h2>Motores de inducción</h2>
-                    <p>Un motor de inducción es una máquina asíncrona, es decir, 
-                        su velocidad de rotación no es igual a la velocidad de sincronismo dada por frecuencia de la red. 
-                    </p>
-                    <p>Los rotores de los motores de inducción pueden dividirse en dos grupos:</p>
-                    <ul>
-                        <li>
-                            Rotor en jaula de ardilla. Estos rotores están formados por una serie de barras 
-                            de cobre o aluminio colocados en las ranuras de dos anillos laterales
-                            cortocircuitados en todo momento. Las barras del rotor forman un pequeño ángulo con 
-                            el eje para reducir el ruido del motor y prevenir el bloqueo causado por la atracción magnética entre el rotor y el estátor. 
-                            Los motores con jaula de ardilla son más baratos y requieren menos mantenimiento.
-                        </li>
-                        <li>
-                            Rotor devanado. Estos rotores están formados por un arrollamiento similar al del estátor.
-                            Este arrollamiento suele tener una conexión en estrella con los terminales conectados a unos anillos colectores 
-                            que permiten insertar resistencias para reducir la corriente de arranque.
-                            Por esta razón, estos motores son usados en grúas y polipastos en donde la corriente de arranque es alta.
-                        </li>
-                    </ul>
-                </div>
-                <div class="subsection">
-                    <h2>Principios de operación</h2>
-                    <p>Cuando un motor de inducción se conecta a una fuente de corriente alterna, la corriente 
-                        en el devanado del estátor crea un campo magnético giratorio la cual se mueve con una velocidad de sincronismo igual a: </p>
-                    $$n=\frac{60f}{p}$$
-                    <p>
-                        Este campo induce una tensión y, por lo tanto, una corriente en el devanado del rotor. 
-                        Usando la ley de Faraday, la tensión inducida en un conductor de longitud $L$ que se mueve a una velocidad $v$
-                        dentro de un campo $B$ se puede expresar como:
-                    </p>
-                    $$ e = (v \times B) \cdot L$$
-                </div>
-                <div class="subsection">
-                    <h2>Referencias</h2>
-                    <ul>
-                        <li>Fitzgerald, Kingsley y Umans (2003). Electric Machinery. McGraw-Hill. </li>
-                        <li>Mora (2003). Máquinas eléctricas. McGraw-Hill. </li>
-                        <li>Papailiou (2021). Springer Handbook of Power Systems. Springer Singapore. </li>
-                    </ul>
-                </div>
-            </section>
 
-            <section id="section3">
-                <h1>Transformadores</h1>
-                <div class="subsection">
-                    <h2>Introducción</h2>
-                    <p>Un transformador es un dispositivo que aumenta o disminuye la tensión en un circuito eléctrico.
-                        Los transformadores puede ser clasificado dependiendo de la fuente de corriente alterna en monofásicos y trifásicos. 
-                    </p>
+                <div class="card">
+                    <a href="aparamenta.html"><h3 class="card-title" style="background-color: #ff7eb6;">Aparamenta</h3></a>
+                    <img src="figs/aparamenta/SF6-circuit-breaker.png" alt="equipos de control">
                 </div>
-                <div class="subsection">
-                    <h2>Construcción</h2>
-                    <p>Los principales componentes de un transformador son:</p>
-                    <ul>
-                        <li>Devanados. </li>
-                        <li>Núcleo. </li>
-                        <li>Bushings. </li>
-                        <li>Sistema de refrigeración. </li>
-                        <li>Sistema de protección. </li>
-                    </ul>
-                </div>
-                <div class="subsection">
-                    <h2>Transformadores en paralelo</h2>
-                    <p>Para poder acoplar dos transformadores en paralelo se deben cumplir las siguientes condiciones:</p>
-                    <ol>
-                        <li>Los transformadores deben pertenecer al mismo grupo de conexiones.</li>
-                        <li>Los transformadores deben tener las mismas tensiones primarias y secundarias, y por lo tanto,
-                            la misma relación de transformación.
-                        </li>
-                        <li>Los transformadores deben tener las mismas tensiones de cortocircuito.</li>
-                    </ol>
-                </div>
-                <div class="subsection">
-                    <h2>Referencias</h2>
-                    <ul>
-                        <li>Fitzgerald, Kingsley y Umans (2003). Electric Machinery. McGraw-Hill. </li>
-                        <li>Mora (2003). Máquinas eléctricas. McGraw-Hill. </li>
-                        <li>Papailiou (2021). Springer Handbook of Power Systems. Springer Singapore. </li>
-                    </ul>
-                </div>
-            </section>
-        </article>
 
-        <script src="assets/script.js"></script>
+                <div class="card">
+                    <a href="líneas.html"><h3 class="card-title" style="background-color: #fa4d56;">Líneas</h3></a>
+                    <img src="figs/líneas/overhead-lines.jpg" alt="líneas de transmisión">
+                </div>
+            </div>
+        </section>
 
-        <script type="text/x-mathjax-config">
-            MathJax.Hub.Config({
-                tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-                jax: ["input/TeX","output/HTML-CSS"],
-                displayAlign: "left",
-            });
-        </script>
-        <script type="text/javascript"src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <footer>
+            <p>
+                Tecnologías Eléctricas es un proyecto de Rayo Artificial.
+                Puedes seguirnos en <a href="https://www.linkedin.com/company/rayoartificial">LinkedIn</a> y 
+                <a href="https://www.youtube.com/@rayoartificial" target="_blank">Youtube</a>.
+                Nuestro email es <a href="mailto:rayoartificial@gmail.com">rayoartificial@gmail.com</a>.
+            </p>
+        </footer>
+        <script src="scripts/script.js"></script>
     </body>
+
 </html>

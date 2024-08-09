@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title> motores </title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/article.css">
+        <link rel="icon" type="image/x-icon" href="figs/iconos/main.svg">
+    </head>
+    <body>
+        <header>
+            <h1>Motores</h1>
+        </header>
+        <nav>
+            <img id="icon" src="figs/iconos/main.svg" alt="icono">
+            <button onclick="collapse()" id="navbarToggler"><img src="figs/iconos/bars.svg" alt=""><span>Menú</span></button>
+            <ul class="navbar" id="navbar">
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+        <article>
+            <div id="intro">
+                <p>
+                    Un motor es una máquina que convierte la energía eléctrica en energía mecánica.
+                    La energía eléctrica es proporcionada por una fuente de corriente monofásica o polifásica.
+                    Los motores están formados por un rotor, un estátor, una caja de bornes y un ventilador.
+                </p>
+                <figure>
+                    <img class="img-fluid" src="figs/motores/motor.png" alt="motor">
+                    <figcaption><p>Vista de sección de un motor</p></figcaption>
+                </figure>
+
+            </div>
+
+            <h2><button class="collapse-button" data-target="section1">Motores de inducción</button></h2>
+            <section id="section1">
+                <p>
+                    Un motor de inducción es una máquina asíncrona, es decir, 
+                    su velocidad de rotación no es igual a la velocidad de sincronismo dada por la frecuencia de la red. 
+                </p>
+                <p>Los rotores de los motores de inducción pueden dividirse en dos grupos:</p>
+                <ul>
+                    <li>
+                        Rotor en jaula de ardilla. Estos rotores están formados por una serie de barras 
+                        de cobre o aluminio colocados en las ranuras de dos anillos laterales
+                        cortocircuitados en todo momento. Las barras del rotor forman un pequeño ángulo con 
+                        el eje para reducir el ruido del motor y prevenir el bloqueo causado por la atracción magnética entre el rotor y el estátor. 
+                        Los motores con jaula de ardilla son más baratos y requieren menos mantenimiento.
+                    </li>
+                    <li>
+                        Rotor devanado. Estos rotores están formados por un arrollamiento similar al del estátor.
+                        Este arrollamiento suele tener una conexión en estrella con los terminales conectados a unos anillos colectores 
+                        que permiten insertar resistencias para reducir la corriente de arranque.
+                        Por esta razón, estos motores son usados en grúas y polipastos en donde la corriente de arranque es alta.
+                    </li>
+                </ul>
+            </section>
+
+            <h2><button class="collapse-button" data-target="section2">Principios de operación</button></h2>
+            <section id="section2">
+                <p>Cuando un motor de inducción se conecta a una fuente de corriente alterna, la corriente 
+                    en el devanado del estátor crea un campo magnético giratorio el cual se mueve con una velocidad de sincronismo igual a: 
+                </p>
+                <div class="equation">
+                    $$n=\frac{60f}{p}$$
+                </div>
+
+                <p>
+                    Este campo induce una tensión y, por lo tanto, una corriente en el devanado del rotor. 
+                    Usando la ley de Faraday, la tensión inducida en un conductor de longitud $L$ que se mueve a una velocidad $v$
+                    dentro de un campo $B$ se puede expresar como:
+                </p>
+                <div class="equation">
+                    $$ e = (v \times B) \cdot L$$
+                </div>
+                <p>
+                    Entonces, la fuerza que experimenta el conductor como resultado de la interacción entre el campo $B$ y 
+                    la corriente $i$ que circula por el conductor del rotor producida por la tensión $e$ será: 
+                </p>
+                <div class="equation">
+                    $$ F = i (L \times B) $$
+                </div>
+            </section>
+
+            <h2><button class="collapse-button" data-target="section3">Referencias</button></h2>
+            <section id="section3">
+                <ul>
+                    <li>Fitzgerald, Kingsley y Umans (2003). Electric Machinery. McGraw-Hill. </li>
+                    <li>Mora (2003). Máquinas eléctricas. McGraw-Hill. </li>
+                    <li>Papailiou (2021). Springer Handbook of Power Systems. Springer Singapore. </li>
+                    <li><a href="https://commons.wikimedia.org/wiki/File:TMW_50906_Schnittmodell_einer_Drehstrommaschine_(Asynchronmaschine).jpg">Vista de sección de un motor</a></li>
+                </ul>
+            </section>
+
+            <h2><button class="collapse-button" data-target="section4">Acerca de este artículo</button></h2>
+            <section id="section4">
+                <p>Autor: Gomer David Lavado Palacios</p>
+                <p>Actualizado: 7 de agosto de 2024</p>
+            </section>
+        </article>
+
+        <script src="scripts/script.js"></script>
+
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+                jax: ["input/TeX","output/HTML-CSS"],
+                displayAlign: "left",
+            });
+        </script>
+
+        <script type="text/javascript"src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </body>
+</html>

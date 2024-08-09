@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title> líneas </title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/article.css">
+        <link rel="icon" type="image/x-icon" href="figs/iconos/main.svg">
+    </head>
+    <body>
+        <header>
+            <h1>Líneas</h1>
+        </header>
+        <nav>
+            <img id="icon" src="figs/iconos/main.svg" alt="icono">
+            <button onclick="collapse()" id="navbarToggler"><img src="figs/iconos/bars.svg" alt=""><span>Menú</span></button>
+            <ul class="navbar" id="navbar">
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+        <article>
+            <div id="intro">
+                <p>
+                    Las líneas de alta tensión transportan la electricidad
+                    desde las centrales de generación hasta las subestaciones.
+                    Estas poseen tensiones superiores a 220 kV y abarcan miles de kilometros.
+                    Por otro lado, las líneas de distribución transportan la electricidad desde 
+                    las subestaciones hasta los consumidores. Estas poseen tensiones inferiores a 220 kV y 
+                    pueden abarcar millones de kilometros.
+                 </p>
+                 <figure>
+                    <img class="img-fluid" src="figs/líneas/overhead-lines.jpg" alt="líneas de transmisión">
+                    <figcaption><p>Líneas aéreas de alta tensión</p></figcaption>
+                 </figure>
+
+            </div>
+
+            <h2><button class="collapse-button" data-target="section1">Conductores</button></h2>
+            <section id="section1">
+                <p>
+                    La conducción eléctrica es el resultado del movimiento de portadores de carga (como los electrones) 
+                    dentro de un material. Supongamos que en los extremos de un segmento de alambre se mantiene un campo eléctrico $E$
+                    el cual produce una densidad de corriente $J$.                     
+                    La ley de Ohm establece que:
+                </p>
+                <div class="equation">
+                    $$J = \sigma E$$
+                </div>
+                <p>Donde $\sigma$ es la conductividad del alambre. 
+                    Entonces, un conductor se puede definir como un material que tiene altos valores de conductividad.
+                    El conductor más utilizado en líneas es el aluminio. 
+                    Los conductores de aluminio se pueden clasificar en:
+                </p>
+                <ul>
+                    <li>AAC. Los conductores AAC son construidos únicamente con aluminio puro. </li>
+                    <li>AAAC. Los conductores AAAC tienen mayor resistencia dado que son fabricados con aleaciones de aluminio con inclusión de magnesio y silicio. </li>
+                    <li>ACSR. Los conductores ACSR tiene capas externas de cable de aluminio enrollados helicoidalmente alrededor de un núcleo formado por cables de acero. </li>
+                    <li>ACAR. Los conductores ACAR están fabricados de una mezcla de hebras de aluminio relativamente puro y hebras de aleación de aluminio. </li>
+                </ul>
+            </section>
+
+            <h2><button class="collapse-button" data-target="section2">Aisladores</button></h2>
+            <section id="section2">
+                <p>
+                    Un aislador es un dispositivo destinado al aislamiento eléctrico y la fijación mecánica de equipos o conductores 
+                    que están sujetos a diferencias de potencial eléctrico.
+                    En una línea un aislador tiene la responsabilidad de separar el potencial del sistema presente en el conductor 
+                    del potencial de tierra presente en el soporte.
+                </p>
+
+                <table class="center">
+                    <caption><p>Clasificación de los aisladores</p></caption>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Material</td>
+                            <td>Aislador de porcelana</td>
+                        </tr>
+                        <tr><td>Aislador de vidrio</td></tr>
+                        <tr><td>Aislador polimérico</td></tr>
+                        <tr>
+                            <td rowspan="3">Forma</td>
+                            <td>Aislador de campana</td>
+                        </tr>
+                        <tr><td>Aislador de pin</td></tr>
+                        <tr><td>Aislador de varilla larga</td></tr>
+                        <tr>
+                            <td rowspan="3">Función</td>
+                            <td>Aislador de suspensión (tensión) </td>
+                        </tr>
+                        <tr><td>Aislador de brazo transversal (compresión) </td></tr>
+                        <tr><td>Aislador tipo viga (flexión) </td></tr>
+                    </tbody>
+                </table>
+                
+                <figure>
+                    <img class="img-fluid" src="figs/líneas/insulator.jpg" alt="aislador de varilla larga">
+                    <figcaption><p>Aislador de varilla larga</p></figcaption>
+                </figure>
+            </section>
+
+            <h2><button class="collapse-button" data-target="section3">Referencias</button></h2>
+            <section id="section3">
+                <ul>
+                    <li>Serway y Jewett Jr. (2009). Física para ciencias e ingeniería con física moderna. Volumen 2. Cengage Learning. </li>
+                    <li>Papailiou (2017). Overhead Lines. Springer International. </li>
+                    <li>Papailiou (2021). Springer Handbook of Power Systems. Springer Singapore. </li>
+                    <li><a href="https://commons.wikimedia.org/wiki/File:Anchor_pylon_of_high-voltage_overhead_power_line_750_kV.jpg">Líneas aéreas</a></li>
+                    <li><a href="https://commons.wikimedia.org/wiki/File:Pylon.detail.arp.750pix.jpg">Aislador de varilla larga</a></li>
+                </ul>
+            </section>
+
+            <h2><button class="collapse-button" data-target="section4">Acerca de este artículo</button></h2>
+            <section id="section4">
+                <p>Autor: Gomer David Lavado Palacios</p>
+                <p>Actualizado: 8 de agosto de 2024</p>
+            </section>
+        </article>
+
+        <script src="scripts/script.js"></script>
+
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+                jax: ["input/TeX","output/HTML-CSS"],
+                displayAlign: "left",
+            });
+        </script>
+
+        <script type="text/javascript"src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </body>
+</html>

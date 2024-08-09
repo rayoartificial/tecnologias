@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title> transformadores </title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/article.css">
+        <link rel="icon" type="image/x-icon" href="figs/iconos/main.svg">
+    </head>
+    <body>
+        <header>
+            <h1>Transformadores</h1>
+        </header>
+        <nav>
+            <img id="icon" src="figs/iconos/main.svg" alt="icono">
+            <button onclick="collapse()" id="navbarToggler"><img src="figs/iconos/bars.svg" alt=""><span>Menú</span></button>
+            <ul class="navbar" id="navbar">
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+        <article>
+            <div id="intro">
+                <p>
+                    Un transformador es un dispositivo que aumenta o disminuye la tensión en un circuito eléctrico.
+                    Los transformadores pueden ser clasificados dependiendo de la fuente de corriente alterna en monofásicos y trifásicos. 
+                </p>
+                <figure>
+                    <img class="img-fluid" src="figs/transformadores/transformador-ABB.jpeg" alt="transformador ABB">
+                    <figcaption><p>Transformador ABB</p></figcaption>
+                </figure>
+            </div>
+
+            <h2><button class="collapse-button" data-target="section1">Transformador ideal</button></h2>
+            <section id="section1">
+                <p>
+                    Un transformador ideal se compone de dos bobinas de alambre arrolladas en torno a un núcleo de hierro.
+                    El devanado primario del transformador ideal comprende una fuente de corriente alterna con una bobina de $N_1$ vueltas en serie.
+                    El devanado secundario del transformador comprende una impedancia con una bobina de $N_2$ vueltas en serie.
+                    La ley de Faraday establece que el voltaje en los terminales del devanado primario es igual a:
+                </p>
+                <div class="equation">
+                    $$v_1=N_1\frac{d \Phi}{d t}$$
+                </div>
+                <p>
+                    Si asumimos que todo el flujo mágnetico circula por el núcleo, es decir, no existen flujos de dispersión,
+                   el voltaje en los terminales del devanado secundario es igual a:
+                </p>
+                <div class="equation">
+                    $$v_2=N_2\frac{d \Phi}{d t}$$
+                </div>
+                <p>
+                    Entonces, se tiene que:
+                </p>
+                <div class="equation">
+                    $$\frac{v_1}{v_2}=\frac{N_1}{N_2}$$
+                </div>
+                <figure>
+                    <img class="img-fluid" src="figs/transformadores/transformer-3d.svg" alt="transformador en 3d">
+                    <figcaption><p>Transformador ideal</p></figcaption>
+                </figure>
+            </section>
+
+            <h2><button class="collapse-button" data-target="section2">Equipos auxiliares</button></h2>
+            <section id="section2">
+                <p>Los transformadores cuentan con un número de equipos auxiliares a fin de operar de manera adecuada en campo incluyendo:</p>
+                <ul>
+                    <li>
+                        Pasatapas. Los pasatapas (bushings) conectan los devanados de un transformador con la red eléctrica
+                        y están formados por un aislador de porcelana lleno de aceite o aire con bornes en sus extremos. 
+                    </li>
+                    <li>
+                        Cambiadores de taps. Los taps de un transformador aumentan o diminuyen ligeramente la tensión en el devanado primario
+                        de la máquina. 
+                        Estos dispositivos son operados cuando el transformador está desenergizado y no tiene carga.
+                        Generalmente, los cambiadores de taps tienen cinco posiciones
+                        (dos posiciones por encima de la tensión nominal, 
+                        dos posiciones por debajo de la tensión nominal 
+                        y una posición en la tensión nominal) con incrementos de 2.5% .
+                        Esto permite ajustes de hasta 5% por encima o debajo de la tensión nominal del transformador.
+                    </li>
+                    <li>Sistema de refrigeración. El sistema de refrigeración evita que los devanados del transformador alcancen
+                        temperaturas altas. 
+                        En transformadores de baja tensión (menores a 5 kV), el aire del ambiente es suficiente para refrigerar los devanados.
+                        En transformadores de alta tensión, se usa aceite para disipar el calor al exterior.
+                    </li>
+                    <li>Relé de Buchholz. El relé de Buchholz protege al transformador de sobrecargas y fallas de aislamiento. </li>
+                </ul>
+            </section>
+
+            <h2><button class="collapse-button" data-target="section3">Transformadores en paralelo</button></h2>
+            <section id="section3">
+                <p>Para poder acoplar dos transformadores en paralelo se deben cumplir las siguientes condiciones:</p>
+                <ol>
+                    <li>Los transformadores deben pertenecer al mismo grupo de conexiones.</li>
+                    <li>Los transformadores deben tener las mismas tensiones primarias y secundarias, y por lo tanto,
+                        la misma relación de transformación.
+                    </li>
+                    <li>Los transformadores deben tener las mismas tensiones de cortocircuito.</li>
+                </ol>
+            </section>
+
+            <h2><button class="collapse-button" data-target="section5">Referencias</button></h2>
+            <section id="section5">
+                <ul>
+                    <li>Fitzgerald, Kingsley y Umans (2003). Electric Machinery. McGraw-Hill. </li>
+                    <li>Mora (2003). Máquinas eléctricas. McGraw-Hill. </li>
+                    <li>Papailiou (2021). Springer Handbook of Power Systems. Springer Singapore. </li>
+                    <li>Winders (2002). Power Transformers: Principles and Applications. CRC Press. </li>
+                    <li><a href="https://commons.wikimedia.org/wiki/File:Transformator_(ABB)_in_Umspannwerk_-_DSCF0998.JPG">Transformador ABB</a></li>
+                    <li><a href="https://commons.wikimedia.org/wiki/File:Transformer3d_col3.svg">Transformador en 3D</a></li>
+                </ul>
+            </section>
+
+            <h2><button class="collapse-button" data-target="section6">Acerca de este artículo</button></h2>
+            <section id="section6">
+                <p>Autor: Gomer David Lavado Palacios</p>
+                <p>Actualizado: 6 de agosto de 2024</p>
+            </section>
+        </article>
+
+        <script src="scripts/script.js"></script>
+
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+                jax: ["input/TeX","output/HTML-CSS"],
+                displayAlign: "left",
+            });
+        </script>
+
+        <script type="text/javascript"src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </body>
+</html>

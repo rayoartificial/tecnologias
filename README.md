@@ -1,2 +1,2 @@
-# Tecnologias eléctricas
-Tecnologias eléctricas es un proyecto educativo de Rayo Artificial que tiene el objetivo de repasar las tecnologias utilizadas en la industria eléctrica y sus aplicaciones.
+# Tecnologias Eléctricas
+Tecnologías Eléctricas es una plataforma de soporte para ingenieros especializados en las áreas de suministro y uso de la energía eléctrica.
