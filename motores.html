@@ -29,7 +29,6 @@
                     <img class="img-fluid" src="figs/motores/motor.png" alt="motor">
                     <figcaption><p>Vista de sección de un motor</p></figcaption>
                 </figure>
-
             </div>
 
             <h2><button class="collapse-button" data-target="section1">Motores de inducción</button></h2>
@@ -82,8 +81,76 @@
                 </div>
             </section>
 
-            <h2><button class="collapse-button" data-target="section3">Referencias</button></h2>
+            <h2><button class="collapse-button" data-target="section3">Rendimiento</button></h2>
             <section id="section3">
+                <p>
+                    El rendimiento eléctrico de un motor depende del ciclo de trabajo a la cual el motor está sujeto.
+                    La norma IEC 60034 detalla 10 ciclos de trabajo incluyendo ciclos de operación continua (S1),
+                    ciclos de operación corta (S2), ciclos de operación con cargas variables o 
+                    periódicas (desde S3 hasta S8), ciclos de operación no periódicas con cargas variables (S9)
+                    y ciclos de operación constante con sobrecargas (S10).
+                    De este modo, los valores nominales de un motor se asignan en función del ciclo de trabajo de la máquina.
+                </p>
+
+            </section>
+
+            <h2><button class="collapse-button" data-target="section4">Conexiones eléctricas</button></h2>
+            <section id="section4">
+                <p>
+                    Los motores de baja tensión pueden estar conectados a una red trifásica de 220 V (entre fases), 
+                    380 V (entre fase y neutro) o 440 V (entre fases). La siguiente tabla muestra el
+                    marcado de terminales de motores que cumplen con la norma IEC 60034-8. 
+                    El sentido de giro de los motores que cumplen esta norma es horario.
+                </p>
+
+                <table class="center">
+                    <caption><p>Marcado de terminales de motores </p></caption>
+                    <tbody>
+                        <tr>
+                            <td>U, V, W</td>
+                            <td>Primer, segundo y tercer devanados primarios del motor</td>
+                        </tr>
+                        <tr>
+                            <td>1 y 2 </td>
+                            <td>Terminales del primer elemento de devanado </td>
+                        </tr>
+                        <tr>
+                            <td>3 y 4 </td>
+                            <td>Terminales del segundo elemento de devanado </td>
+                        </tr>
+                        <tr> 
+                            <td>L</td>
+                            <td>Conductor de suministro</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <figure>
+                    <img class="img-fluid" src="figs/motores/dual-voltage-con.svg" alt="conexión delta y estrella">
+                    <figcaption><p>Conexiones delta y estrella de un motor de 6 terminales</p></figcaption>
+                </figure>
+
+                <figure>
+                    <img class="img-fluid" src="figs/motores/parallel-star-delta-12.svg" alt="conexión estrella"> 
+                    <figcaption><p>Conexión estrella y delta en paralelo de un motor de 12 terminales</p></figcaption>
+                </figure>
+            </section>
+
+            <h2><button class="collapse-button" data-target="section5">Mantenimiento</button></h2>
+            <section id="section5">
+                <p>
+                    El mantenimiento de equipos industriales como motores puede ser preventivo, correctivo o predictivo. 
+                    El mantenimiento preventivo de los motores eléctricos incluye: 
+                </p>
+                <ul>
+                    <li>Medir la resistencia de los devanados (U1 y U2, V1 y V2, W1 y W2). El objetivo es verificar que las espiras no esten abiertas.</li>
+                    <li>Medir el aislamiento entre fases y entre fases y tierra con un megóhmetro. </li>
+                    <li>Barnizado y estufado de las bobinas del estátor. </li>
+                </ul>
+            </section>
+
+            <h2><button class="collapse-button" data-target="section6">Referencias</button></h2>
+            <section id="section6">
                 <ul>
                     <li>Fitzgerald, Kingsley y Umans (2003). Electric Machinery. McGraw-Hill. </li>
                     <li>Mora (2003). Máquinas eléctricas. McGraw-Hill. </li>
@@ -92,10 +159,10 @@
                 </ul>
             </section>
 
-            <h2><button class="collapse-button" data-target="section4">Acerca de este artículo</button></h2>
-            <section id="section4">
+            <h2><button class="collapse-button" data-target="section7">Acerca de este artículo</button></h2>
+            <section id="section7">
                 <p>Autor: Gomer David Lavado Palacios</p>
-                <p>Actualizado: 7 de agosto de 2024</p>
+                <p>Actualizado: 17 de agosto de 2024</p>
             </section>
         </article>
 

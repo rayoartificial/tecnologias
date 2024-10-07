@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title> interruptores </title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/article.css">
+        <link rel="icon" type="image/x-icon" href="figs/iconos/main.svg">
+    </head>
+    <body>
+        <header>
+            <h1>Interruptores</h1>
+        </header>
+        <nav>
+            <img id="icon" src="figs/iconos/main.svg" alt="icono">
+            <button onclick="collapse()" id="navbarToggler"><img src="figs/iconos/bars.svg" alt=""><span>Menú</span></button>
+            <ul class="navbar" id="navbar">
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+        <article>
+            <div id="intro">
+                <p> Un interruptor eléctrico es un dispositivo diseñado para establecer, interrumpir o cambiar la conexión de un circuito.
+                    Un interruptor puede ser un dispositivo de protección (interruptores de potencia, termomagnéticos) o aislamiento (seccionadores). 
+                </p>
+                <figure>
+                    <img class="img-fluid" src="figs/interruptores/SF6-circuit-breaker.png" alt="interruptor SF6">
+                    <figcaption><p>Interruptor de tanque vivo</p></figcaption>
+                </figure>
+            </div>
+
+            <h2><button class="collapse-button" data-target="section1">Interruptores automáticos</button></h2>
+            <section id="section1">
+                <p> El CNE - Utilización señala que un interruptor automático es un dispositivo diseñado para abrir o cerrar
+                    un circuito de manera no automática, y para abrir el circuito automáticamente cuando se produce una sobrecorriente,
+                    sin sufrir daños cuando es utilizado dentro de sus valores nominales. 
+                    Los interruptores automáticos más usados en alta y baja tensión son los de potencia y los termomagnéticos respectivamente.
+                    La siguiente tabla muestra una clasificación de los interruptores automáticos de baja tensión (&lt1000 V) 
+                    de acuerdo con la norma IEC 60947-2.
+                </p>
+
+                <table class="center">
+                    <caption><p>Clasificación de interruptores automáticos de baja tensión </p></caption>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Medio de interrupción</td>
+                            <td>Aire</td>
+                        </tr>
+                        <tr><td>Vacío</td></tr>
+                        <tr><td>Gas</td></tr>
+                        <tr>
+                            <td rowspan="2">Diseño</td>
+                            <td>Construcción abierta</td>
+                        </tr>
+                        <tr><td>Caja moldeada</td></tr>
+                        <tr>
+                            <td rowspan="2">Mantenimiento</td>
+                            <td>Requieren</td>
+                        </tr>
+                        <tr><td>No requieren</td></tr>
+                        <tr>
+                            <td rowspan="3">Método de instalación</td>
+                            <td>Fijos</td>
+                        </tr>
+                        <tr><td>Plug-in</td></tr>
+                        <tr><td>Extraíbles</td></tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+            <h2><button class="collapse-button" data-target="section2">Interruptores de potencia</button></h2>
+            <section id="section2">
+                <p>
+                    Un interruptor de potencia tiene la función de despejar fallas eléctricas y asegurar la estabilidad del sistema.
+                    Por eso, un interruptor puede soportar condiciones normales y anormales del sistema, como un cortocircuito.
+                    Los interruptores pueden volver a conectarse manualmente o automáticamente después de una falla. 
+                    Estos se pueden dividir en dos grupos:
+                </p>
+                <ul>
+                    <li>
+                        Interruptores de tanque vivo. En un interruptor de tanque vivo, los mecanismos de apertura están dentro de 
+                        un tanque aislado del potencial de tierra. 
+                        Los conductores se conectan directamente a los terminales del interruptor.
+                    </li>
+                    <li>Interruptores de tanque muerto. En un interruptor de tanque muerto, los mecanismos de apertura están
+                        dentro de una carcasa metálica conectada a tierra.
+                        Los conductores se conectan a través de los pasatapas del interruptor.
+                    </li>
+                </ul>
+                <figure>
+                    <img class="img-fluid" src="figs/interruptores/circuit-breaker.jpg" alt="interruptor de tanque muerto">
+                    <figcaption><p>Interruptor de tanque muerto</p></figcaption>
+                </figure>
+                
+            </section>
+
+            <h2><button class="collapse-button" data-target="section3">Interruptores termomagnéticos</button></h2>
+            <section id="section3">
+                <p>Un interruptor termomagnético es un dispositivo diseñado para proteger contra sobrecargas y cortocircuitos.
+                    Los interruptores termomagnéticos más usados en instalaciones de baja tensión son:
+                </p>
+                <ul>
+                    <li>Interruptores de caja moldeada (MCCB). Estos interruptores tienen sus elementos conductores, mecanismos y dispositivos de disparo 
+                        completamente contenidos dentro de una caja moldeada de material aislante. </li>
+                    <li>Interruptores de bastidor abierto (WCBS). Estos interruptores son colocados dentro de una caja (bastidor) usando rieles y contactos. 
+                        De este modo, estos interruptores se pueden retirar físicamente del bastidor para aislarlo de la carga. 
+                    </li>
+                    <li>Interruptores riel din. Estos interruptores son usados en aplicaciones con tensiones menores a 440 V. 
+                        Estos interruptores pueden ser clasificados de acuerdo con la corriente de disparo instantánea en 
+                        tipo B, tipo C y tipo D. </li>
+                </ul>
+                <div class="block">
+                    <div class="remark">Nota</div>
+                    <p>En aplicaciones residenciales, se deben seleccionar interruptores que cumplan con la norma IEC 60898,
+                        mientras que en aplicaciones industriales, se deben seleccionar interruptores que cumplan con la norma
+                    IEC 60947. </p>
+                </div>
+                <p>Para seleccionar la corriente nominal de un interruptor termomagnético se debe tener en cuenta la operación térmica 
+                    del dispositivo (contra sobrecargas). De acuerdo con la norma IEC 60364-4-43, se proporciona una protección contra 
+                    corrientes de sobrecarga si se cumplen estas dos condiciones:
+                </p>
+                <div class="equation">
+                    $$ I_B \leq I_N \leq I_Z $$
+                </div>
+                <div class="equation">
+                    $$ I_2 \leq 1.45 \times I_Z $$
+                </div>
+                <p>Donde $I_B$ es la corriente de diseño del circuito, $I_Z$ es la capacidad de transporte de corriente 
+                    de manera continua del conductor,  $I_N$ es la corriente nominal del dispositivo de protección e 
+                    $I_2$ es la corriente que garantiza el funcionamiento eficaz en el tiempo convencional del dispositivo de protección.
+                </p>
+            </section>
+
+            <h2><button class="collapse-button" data-target="section4">Seccionadores</button></h2>
+            <section id="section4">
+                <p>
+                    Un seccionador es un dispositivo de conmutación capaz de abrir y cerrar un circuito cuando 
+                    la corriente que fluye por sus electrodos es despreciable (igual o menor a 1 A)
+                    y la tensión en sus polos es la misma. 
+                    Es decir, un seccionador únicamente puede maniobrarse en vacío.
+                    Por otro lado, este puede transportar corriente en condiciones normales y anormales (por un pequeño lapso de tiempo).
+                 </p>
+                 
+                 <table class="center">
+                    <caption><p>Clasificación de los seccionadores</p></caption>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">Un borne de conexión</td>
+                            <td>Seccionadores con apertura de rodilla </td>
+                        </tr>
+                        <tr><td>Seccionadores pantógrafo</td></tr>
+                        <tr>
+                            <td rowspan="3">Dos bornes de conexión</td>
+                            <td>Seccionadores con apertura vertical</td>
+                        </tr>
+                        <tr><td>Seccionadores con apertura central</td></tr>
+                        <tr><td>Seccionadores con doble apertura</td></tr>
+                    </tbody>
+                </table>
+
+                 <figure>
+                    <img class="img-fluid" src="figs/interruptores/pantograph.jpg" alt="seccionador pantógrafo">
+                    <figcaption><p>Seccionador pantógrafo</p></figcaption>
+                 </figure>
+            </section>
+
+            <h2><button class="collapse-button" data-target="section5">Referencias</button></h2>
+            <section id="section5">
+                <ul>
+                    <li>Papailiou (2021). Springer Handbook of Power Systems. Springer Singapore. </li>
+                    <li>Smeets, van der Sluis, Kapetanovic, Peelo, Janssen (2015). Switching in Electrical Transmission and Distribution Systems. John Wiley & Sons. </li>
+                    <li>IEC 60947-1. Low-voltage switchgear and controlgear - Part 1: General rules </li>
+                    <li>IEC 60947-2. Low-voltage switchgear and controlgear - Part 2: Circuit-breakers</li>
+                    <li>IEC 60898-1. Electrical accessories - Circuit-breakers for overcurrent protection for household and similar installations - Part 1: Circuit-breakers for a.c. operation. </li>
+                    <li>IEC 60364-4-43. Low-voltage electrical installations - Part 4-43: Protection for safety - Protection against overcurrent. </li>
+                    <li><a href="https://commons.wikimedia.org/wiki/File:Leistungsschalter_KKK.JPG">Interruptores SF6</a></li>
+                    <li><a href="https://commons.wikimedia.org/wiki/File:Circuit_breakers_at_substation_near_Denver_International_Airport,_Colorado.jpg">Interruptor de tanque muerto</a></li>
+                    <li><a href="https://commons.wikimedia.org/wiki/File:Scheider_pantograaf.jpg">Seccionador pantógrafo</a></li>
+                </ul>
+            </section>
+
+            <h2><button class="collapse-button" data-target="section6">Acerca de este artículo</button></h2>
+            <section id="section6">
+                <p>Autor: Gomer David Lavado Palacios</p>
+                <p>Actualizado: 06 de octubre de 2024</p>
+            </section>
+        </article>
+
+        <script src="scripts/script.js"></script>
+
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+                jax: ["input/TeX","output/HTML-CSS"],
+                displayAlign: "left",
+            });
+        </script>
+
+        <script type="text/javascript"src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </body>
+</html>
+
+

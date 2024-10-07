@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title> accionamientos </title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/article.css">
+        <link rel="icon" type="image/x-icon" href="figs/iconos/main.svg">
+    </head>
+    <body>
+        <header>
+            <h1>Accionamientos</h1>
+        </header>
+        <nav>
+            <img id="icon" src="figs/iconos/main.svg" alt="icono">
+            <button onclick="collapse()" id="navbarToggler"><img src="figs/iconos/bars.svg" alt=""><span>Menú</span></button>
+            <ul class="navbar" id="navbar">
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+        <article>
+            <div id="intro">
+                <p>
+                    Un accionamiento eléctrico convierte energía eléctrica en mecánica conservando el control durante todo el proceso.
+                    Métodos convencionales para el control incluyen reostátos de arranque y regulación,
+                    el sistema Ward Leonard y el uso de transformadores de tensión.
+                    Por otro lado, la electrónica de potencia ha permitido el uso de dispositivos semiconductores de conmutación 
+                    para el control de motores.
+                 </p>
+                 <figure>
+                    <img class="img-fluid" src="figs/accionamientos/small_variable-frequency_drive.png" alt="">
+                    <figcaption><p>Variador de frecuencia</p></figcaption>
+                 </figure>
+            </div>
+    
+            <h2><button class="collapse-button" data-target="section1">Dispositivos de conmutación</button></h2>
+            <section id="section1">
+                <p>Los dispositivos semiconductores de conmutación actuán como interruptores estáticos 
+                    que bloquean la tensión aplicada o permiten el paso de corriente. Algunos de estos incluyen:
+                </p>
+                <ul>
+                    <li>Diodos rectificadores. Estos dispositivos basan su funcionamiento en una unión tipo PN. 
+                        Los diodos rectificadores tienen un ánodo (A) en la unión P y un cátodo (K) en la unión N.
+                        Los diodos dejan pasar la corriente en una dirección cuando se aplica una tensión mayor a un
+                        valor de potencial (0.7 V para diodos de silicio).
+                    </li>
+                    <li>Tiristor o rectificadores controlados de silicio (SCR). Estos dispositivos tienen 3 terminales
+                        incluyendo un ánodo (A), un cátodo (K) y una puerta (G). Cuando se aplica un pequeño impulso de corriente
+                        en la puerta, el tiristor deja pasar la corriente.
+                    </li>
+                    <li>Tiristor de apagado por puerta (GTO). Cuando se aplica un impulso positivo de corriente
+                        de puerta, este dispositivo pasa al estado de encendido y cuando se aplica un impulso negativo,
+                        el dispositivo se desconecta.
+                     </li>
+                </ul>
+            </section>
+    
+            <h2><button class="collapse-button" data-target="section2">Referencias</button></h2>
+            <section id="section2">
+                <ul>
+                    <li>Fitzgerald, Kingsley y Umans (2003). Electric Machinery. McGraw-Hill. </li>
+                    <li>Mora (2003). Máquinas eléctricas. McGraw-Hill. </li>
+                    <li><a href="https://commons.wikimedia.org/wiki/File:Small_variable-frequency_drive.jpg">Variador de frecuencia</a></li>
+                </ul>
+            </section>
+
+            <h2><button class="collapse-button" data-target="section3">Acerca de este artículo</button></h2>
+            <section id="section3">
+                <p>Autor: Gomer David Lavado Palacios</p>
+                <p>Actualizado: 01 de octubre de 2024</p>
+            </section>
+
+        </article>
+        
+        <script src="scripts/script.js"></script>
+
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+                jax: ["input/TeX","output/HTML-CSS"],
+                displayAlign: "left",
+            });
+        </script>
+
+        <script type="text/javascript"src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title> distribución </title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/article.css">
+        <link rel="icon" type="image/x-icon" href="figs/iconos/main.svg">
+    </head>
+    <body>
+        <header>
+            <h1>Distribución</h1>
+        </header>
+        <nav>
+            <img id="icon" src="figs/iconos/main.svg" alt="icono">
+            <button onclick="collapse()" id="navbarToggler"><img src="figs/iconos/bars.svg" alt=""><span>Menú</span></button>
+            <ul class="navbar" id="navbar">
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+        <article>
+            <div id="intro">
+                <p>
+                    Una red de distribución en baja tensión suministra energía eléctrica desde un centro
+                    de transformación a los consumidores finales.
+                 </p>
+                 <figure>
+                    <img class="img-fluid" src="figs/distribución/UKDistributionBoard.png" alt="">
+                    <figcaption><p>Tablero de distribución</p></figcaption>
+                 </figure>
+            </div>
+
+            <h2><button class="collapse-button" data-target="section1">Cableado</button></h2>
+            <section id="section1">
+                <p>El cableado es el conjunto de conductores y cables de una instalación.
+                    La capacidad de corriente de un conductor debe ser la suficiente para transportar la 
+                    corriente total de la carga. 
+                    La IEEE 141 1993 indica que cuando los conductores tienen secciones mayores a 500 kcmil (300 mm2),
+                    es necesario usar cables en paralelo.
+                    Para determinar la carga que debe soportar un cable en un sistema trifásico con una tensión V,
+                    se puede usar la siguiente fórmula:
+                </p>
+
+                <div class="equation">
+                    $$ I =\frac{P}{\sqrt{3} V cos \phi} $$
+                </div>
+
+                <p>Donde P es la potencia en kilovatios (kW) y $ cos \phi $ es el factor de carga.
+                    La caída de tensión también es importante para dimensionar un cable. 
+                    Para estimar este valor se puede utilizar la siguiente ecuación:
+                </p>
+
+                <div class="equation">
+                    $$ \delta V = \sqrt{3} \left( I R cos \phi + I X sin \phi \right)$$
+                </div>
+
+                <p>Donde R es la resistencia por unidad de longitud ($ \Omega / km $) y X es la reactancia por unidad de longitud ($ \Omega / km $ ).
+                </p>
+
+                <table class="center">
+                    <caption><p> Clasificación de conductores </p></caption>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">Construcción</td>
+                            <td>Unipolar</td>
+                        </tr>
+                        <tr><td>Multipolar</td></tr>
+                        <tr>
+                            <td rowspan="2">Tendido</td>
+                            <td>Horizontal</td>
+                        </tr>
+                        <tr><td>Vertical</td></tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+            <h2><button class="collapse-button" data-target="section2">Canalizaciones</button></h2>
+            <section id="section2">
+                <p>
+                    El CNE - Utilización define una canalización como un canal cerrado diseñado para portar 
+                    alambres, cables o sistemas de barras.
+                </p>
+
+                <table class="center">
+                    <caption><p>Clasificación de canalizaciones</p></caption>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Geometría</td>
+                            <td>Tuberías rígidas o flexibles</td>
+                        </tr>
+                        <tr><td>Bandejas en escalera o perforada</td></tr>
+                        <tr><td>Ductos</td></tr>
+                        <tr>
+                            <td rowspan="2">Material</td>
+                            <td>Metal (conduit)</td>
+                        </tr>
+                        <tr><td>No metálica (PVC)</td></tr>
+                        <tr>
+                            <td rowspan="2">Lugar</td>
+                            <td>Empotrado</td>
+                        </tr>
+                        <tr><td>En superficie (pared o mampostería)</td></tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+            <h2><button class="collapse-button" data-target="section3">Referencias</button></h2>
+            <section id="section3">
+                <ul>
+                    <li>IEEE 141-1993. Recommended Practice for Electric Power Distribution for Industrial Plants.</li>
+                    <li><a href="https://commons.wikimedia.org/wiki/File:UKDistributionBoard.JPG">Tablero de distribución</a></li>
+                </ul>
+            </section>
+
+            <h2><button class="collapse-button" data-target="section4">Acerca de este artículo</button></h2>
+            <section id="section4">
+                <p>Autor: Gomer David Lavado Palacios</p>
+                <p>Actualizado: 06 de octubre de 2024</p>
+            </section>
+
+        </article>
+
+        <script src="scripts/script.js"></script>
+
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+                jax: ["input/TeX","output/HTML-CSS"],
+                displayAlign: "left",
+            });
+        </script>
+
+        <script type="text/javascript"src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </body>
+</html>
